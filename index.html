@@ -9,7 +9,7 @@
     <center>
         <!-- sait logo and home section -->
         <img src="https://www.polytechnicscanada.ca/wp-content/uploads/2019/04/190415sait.png" height="150px">
-        <h1>HOME</h1>
+        <h1 id="home">HOME</h1>
         <p> David D - ITSD Section CCC </p>
 
         <!-- navigation buttons -->
@@ -18,8 +18,7 @@
             <a class="example_f" href="#aboutme"><span>About Me</a>
             <a class="example_f" href="#courses"><span>Courses</a>
             <a class="example_f" href="#work"><span>Work Experience</a>
-            <a class="example_f" href="https://na.op.gg/summoner/userName=divey" target="_blank"
-                rel="nofollow"><span>op.gg</a>
+            <a class="example_f" href="#contactme"><span>Contact Me</a>
 
         </div>
 
@@ -83,11 +82,28 @@
         <p> I worked a seasonal position at the Calgary Stampede last summer. I was a gate attendant who directed the
             flow of customer traffic. </p>
 
-        <h2> CONTACT ME </h2>
-
-
-
-
-
+        <h2 id="contactme"> CONTACT ME </h2>
+        <form method="post" action="http://www.personal@sait.ca/">
+            <table>
+                <tr>
+                    <td>Message Subject:</td>
+                    <td><input type="text" name="subject"></td>
+                </tr>
+                <tr>
+                    <td>Message Type: </td>
+                    <td><input type="radio" name="type" value="work"> Work <br>
+                        <input type="radio" name="type" value="personal"> Personal <br></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Message:</td>
+                    <td><textarea name="comments" rows="4" cols="36">Enter Comments Here.</textarea><br></td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+        <br>
+        <a class="example_f" href="#home"><span>Back to Top</a>
     </center>
 </body>
