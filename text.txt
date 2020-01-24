@@ -1,0 +1,28 @@
+Who will you talk to and observe?
+        We will talk to the cooking students at SAIT,
+        as well as any students around campus who enjoy
+        cooking.
+How will you conduct an observation?
+        We will conduct observations by observing the process
+        an individual takes to utilize their current ingredients
+        to cook up a dish.
+What kinds of questions would you ask in an interview?
+        - How do you find recipes?
+        - Do you usually know what is inside your pantry?
+        - Would there be anything that could make finding recipes
+        easier for you?
+Where would you interview?
+        - We can interview in person with various students across campus
+        - We can look up online for any criticisms anyone has when it
+        comes to finding recipes
+How would you "try" the tasks the user does?
+        - Based on the interview answers, we can imitate the process
+        of finding recipes
+            - For example, if the process of finding recipes involves 
+            using cookbooks, we will "try" the task by also using a
+            cookbook
+            - Another example, using google to search for recipes that
+            involve ingredients that are in the pantry
+What problems do you forsee having? What will be the hardest part of
+the process? How will you deal with those?
+        - A problem we might run into is 
