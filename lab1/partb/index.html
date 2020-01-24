@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Form
+    </title>
+</head>
+
+<body>
+    <form method="post" action="http://www.sait.ca/">
+        <h1> Feedback Form </h1>
+        <table>
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="fullname"></td>
+            </tr>
+            <tr>
+                <td>Email Address:</td>
+                <td><input type="text" name="email"></td>
+                </td>
+            </tr>
+            <tr>
+                <td>Contact Phone:</td>
+                <td><input type="text" name="phone"></td>
+            </tr>
+        </table>
+
+        <h2> What part of campus do you like the most? </h2>
+        <input type="checkbox" name="athletic-centre" value="athletic centre">Athletic Centre<br>
+        <input type="checkbox" name="student-centre" value="student centre">Student Centre<br>
+        <input type="checkbox" name="food-court" value="food court">Food Court<br>
+        <input type="checkbox" name="parking-lot" value="parking lot">Parking Lot<br>
+        <input type="checkbox" name="dorm-rooms" value="dorm rooms">Dorm Rooms<br>
+
+        <h2> How did you become interested in SAIT? </h2>
+        <input type="radio" name="interests" value="open house"> Open House<br>
+        <input type="radio" name="interests" value="advertising"> Advertising<br>
+        <input type="radio" name="interests" value="school counselling"> School Counselling<br>
+
+        <h2> Additional Comments </h2>
+        <textarea name="comments" rows="4" cols="36">Enter Comments Here.</textarea><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+
+    </form>
+</body>

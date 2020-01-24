@@ -1,0 +1,105 @@
+/*lab1.css - stylesheet examples*/
+
+body
+{
+	background-image: linear-gradient(to right, #D9C15F, #4AD4D4);
+}
+
+h1
+{
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 25px;
+	
+	color:white;
+}
+
+h2
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	letter-spacing: 50px;
+	font-style: italic;
+	color: white;
+	font-size: 32px;
+	
+}
+h3
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	color: white;
+}
+
+p
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: large;
+	margin-left: 300px;
+	margin-right: 300px;
+	color: white;
+	
+}
+
+p::first-letter {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 200%;
+	font-style: bold;
+	color: #8A2BE2;
+  }
+
+
+a:hover
+{
+	color: red;
+}
+
+table {
+	color: white;
+	border: 3px, white;
+	background-color: black;
+	padding: 5px;
+	border-spacing: 25px;
+	
+	
+}
+
+.example_f {
+	border-radius: 4px;
+	border: none;
+	background: linear-gradient(to right, black, black) !important;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-family: arial;
+	padding: 5px;
+	width: 200px;
+	transition: all 0.4s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.example_f span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.4s;
+}
+
+.example_f span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.example_f:hover span {
+	padding-right: 25px;
+}
+
+.example_f:hover span:after {
+	opacity: 1;
+	right: 0;
+}
