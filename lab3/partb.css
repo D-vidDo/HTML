@@ -1,10 +1,6 @@
-/*lab1.css - stylesheet examples*/
-
 body
 {
-	background-image: linear-gradient(to right, #D9C15F, #4AD4D4);
-	margin-left: 20%;
-	margin-right: 20%;
+    background-image: url("https://wallpaperaccess.com/full/4896.jpg");
 }
 
 .floatwrap
@@ -27,7 +23,8 @@ figcaption
 h1
 {
 	font-family: 'Bebas Neue', cursive;
-	letter-spacing: 25px;
+    letter-spacing: 25px;
+    font-size: xx-large;
 	color:white;
 }
 
@@ -61,16 +58,26 @@ p::first-letter {
 	color: #8A2BE2;
   }
 
-
-a:hover
-{
-	background-color: #4AD4D4;
-	color: rgb(128, 104, 12);
-}
-
 img
 {
 	width: 200px;
+}
+
+table
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: x-large;
+    border: 5px, white;
+    color: black;
+}
+
+form
+{
+    background-color: white;
+    opacity: 75%;
+    padding: 1%;
+    margin-left: 600px;
+    margin-right: 600px
 }
 
 

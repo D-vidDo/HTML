@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="partb.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans+Condensed:300&display=swap"
+        rel="stylesheet">
+    <title>
+        New Hotels Form
+    </title>
+</head>
+
+<body>
+    <center>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1> New Hotel Registration! </h1>
+
+
+        <form method="post" action="http://www.registration@newhotels.net/">
+            <table style: align="center">
+                <tr>
+                    <td align="right">Name:</td>
+                    <td align="left"><input type="text" name="fullname" maxlength="25" pattern="^[A-Za-z -]+$"
+                            placeholder="Full Name" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Address:</td>
+                    <td align="left"><input type="text" name="address" placeholder="Home Address" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Phone Number:</td>
+                    <td align="left"><input type="text" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="123-456-7890" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Age:</td>
+                    <td align="left"><input type="number" min="1" max="100" name="age" placeholder="1-100" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Email:</td>
+                    <td align="left"><input type="email" name="email"
+                            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                            placeholder="example@email.com" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Registration Date:</td>
+                    <td align="left"><input type="date" name="regdate" /></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="submit" value="Submit"></td>
+                    <td align="center"><input type="reset" value="Clear"></td>
+                </tr>
+
+
+
+            </table>
+        </form>
+    </center>
+</body>
