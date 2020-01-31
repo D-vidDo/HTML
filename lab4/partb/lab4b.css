@@ -1,0 +1,129 @@
+/*lab1.css - stylesheet examples*/
+
+@media all {
+
+
+body
+{
+	background-image: linear-gradient(to right, rgb(240, 118, 219), #4AD4D4);
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.floatwrap
+{
+	float: right;
+	margin: 10px;
+}
+.floatwrap-left
+{
+	float: left;
+	margin: 10px;
+}
+
+figcaption
+{
+	font-family: 'Open Sans Condensed';
+	color: white;
+}
+
+h1
+{
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 25px;
+    color:white;
+    font-size: 82px;
+}
+
+h2
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-style: italic;
+	color: white;
+}
+h3
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: white;
+}
+
+p
+{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: large;
+	color: white;
+	
+}
+
+a:hover
+{
+	background-color: #4AD4D4;
+	color: rgb(128, 104, 12);
+}
+
+img
+{
+	width: 200px;
+}
+
+.example_c {
+    color: #ffffff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff00;
+    padding: 10px;
+    border: 2px solid #ffffff !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+.example_c:hover {
+    color: #000000 !important;
+    background: #ffffff;
+    border-color: #ffffff !important;
+    transition: all 0.4s ease 0s;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 5%;
+    width: 100%;
+    color: white;
+  }
+
+  table {
+      font-family: 'Open Sans Condensed' sans-serif;
+      border-color: white;
+      color: white;
+  }
+  
+}
+
+@media print {
+    body {
+        background-color: white;
+        font-family: 'Arial';
+    }
+    img {
+        display: none;
+    }
+    h1 {
+        font-family: 'Arial';
+        font-size: 32px;
+    }
+    h2 {
+        font-family: 'Arial';
+        font-size: 16px;
+    }
+    h3 {
+        font-family: 'Arial';
+        font-size: 12px;
+    }
+    p {
+        font-family: 'Arial';
+        font-size: 12px;
+    }
+
+}
