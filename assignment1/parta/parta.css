@@ -1,13 +1,33 @@
-/*lab1.css - stylesheet examples*/
-
 body
 {
-    background-image: url("canadian_rockies/COLOURBOX24026236.jpg");
+    /* background-image: url("canadian_rockies/COLOURBOX24026236.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
-    margin-left: 20%;
-    margin-right: 20%;
+    background-size: 100%; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.back::after
+{
+    content: ' ';
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-image:url('canadian_rockies/COLOURBOX24026236.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 div
@@ -31,6 +51,7 @@ h1
     color:white;
     font-size: 82px;
     font-weight: bolder;
+    text-shadow: 1px 1px black;
 }
 
 h2
@@ -46,6 +67,7 @@ h3
 	font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: bolder;
+    text-shadow: 1px 1px black;
 }
 
 p
@@ -69,4 +91,14 @@ img:hover
 {
     transform: scale(1.25);
     transition: all 2s ease-in-out;
+}
+
+.floatwrap
+{
+	float: right;
+    margin: 10px;
+}
+figure
+{
+    text-shadow: 1px 1px black;
 }
