@@ -2,9 +2,10 @@
 
 body
 {
-    background-image: url("C:/Users/714163/Documents/GitHub/HTML/assignment1/photo_archives/canadian_rockies/COLOURBOX24026236.jpg");
+    background-image: url("canadian_rockies/COLOURBOX24026236.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100%;
-    background;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -62,7 +63,8 @@ p
 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: large;
-	color: white;
+    color: white;
+    text-shadow: 1px 1px black;
 	
 }
 
