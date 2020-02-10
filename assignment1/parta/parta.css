@@ -18,21 +18,9 @@ div
     column-width: 250px;
 }
 
-
-.floatwrap
-{
-	float: right;
-	margin: 10px;
-}
-.floatwrap-left
-{
-	float: left;
-	margin: 10px;
-}
-
 figcaption
 {
-	font-family: 'Open Sans Condensed';
+	font-family: 'Roboto';
 	color: white;
 }
 
@@ -47,31 +35,27 @@ h1
 
 h2
 {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-style: italic;
     color: white;
     font-weight: bolder;
+    -webkit-text-stroke: 0.75px black;
 }
 h3
 {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: bolder;
 }
 
 p
 {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: large;
     color: white;
-    text-shadow: 1px 1px black;
+    /* text-shadow: 1px 1px black; */
+    -webkit-text-stroke: 0.75px black;
 	
-}
-
-a:hover
-{
-	background-color: #4AD4D4;
-	color: rgb(128, 104, 12);
 }
 
 img
@@ -81,44 +65,8 @@ img
     
 }
 
-.imghover
+img:hover
 {
-
+    transform: scale(1.25);
+    transition: all 2s ease-in-out;
 }
-
-.example_c {
-    color: #ffffff !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #ffffff00;
-    padding: 10px;
-    border: 2px solid #ffffff !important;
-    display: inline-block;
-    transition: all 0.4s ease 0s;
-    font-family: 'Open Sans Condensed', sans-serif;
-    }
-
-.example_c:hover {
-    color: #000000 !important;
-    background: #ffffff;
-    border-color: #ffffff !important;
-    transition: all 0.4s ease 0s;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 5%;
-    width: 100%;
-    color: white;
-  }
-
-  #column {
-    -moz-column-count: 2;
-    -moz-column-gap: 1em;
-    -moz-column-rule: 2px solid #ffffff;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 1em;
-    -webkit-column-rule: 2px solid #ffffff;
-}
-
