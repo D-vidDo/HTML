@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Delicatessen</title>
+</head>
+
+<center>
+<body>
+    <!-- Personal Info -->
+    <table>
+        <tr>
+            <td align="right">Name:</td>
+            <td align="left"><input type="text" name="fullname" maxlength="25" pattern="^[A-Za-z -]+$"
+                    placeholder="Full Name" /></td>
+        </tr>
+        <tr>
+            <td align="right">Street Address:</td>
+            <td align="left"><input type="text" name="address" placeholder="Home Address" /></td>
+        </tr>
+        <tr>
+            <td align="right">Phone Number:</td>
+            <td align="left"><input type="text" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="123-456-7890" /></td>
+        </tr>
+    </table>
+
+
+    <h2>
+        Pizza
+    </h2>
+    <!-- Pizza -->
+    <input type="radio" name="pizzatype"> Super Cheesy
+    <input type="radio" name="pizzatype"> Extra Meaty
+    <input type="radio" name="pizzatype"> Really Veggy
+
+    <p>
+        Size & Pricing:
+        <input type="radio" name="pizzasize" value="8.50"> Small - $8.50
+        <input type="radio" name="pizzasize" value="11.50"> Medium - $11.50
+        <input type="radio" name="pizzasize" value="14.00"> Large - $14.00
+        <input type="radio" name="pizzasize" value="16.50"> Extra Large - $16.50
+    </p>
+ 
+        Quantity:
+        <input type="number" min="0" name="pizzaNum" placeholder="0">
+  
+
+    <button type="button" onclick="test()">TEST BUTTON</button>
+
+    <p id="result"></p>
+    <p id="total"></p>
+
+
+
+
+</body>
+</center>
+<script src="main.js"></script>
+
+</html>
