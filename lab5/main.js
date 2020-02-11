@@ -1,6 +1,6 @@
 
 function test() {
-    var ele = document.getElementsByName('pizzasize'); 
+    var ele = document.getElementById('pizzasize').value; 
       
     for(i = 0; i < ele.length; i++) { 
         if(ele[i].checked) 
@@ -11,7 +11,7 @@ function test() {
     }
 
 
-    var pizzaNum = document.getElementsByName("pizzaNum").value;
+    var pizzaNum = document.getElementById("pizzaNum").value;
 
     var quan;
     quan = parseFloat(pizzaNum);
