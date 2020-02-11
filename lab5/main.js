@@ -6,6 +6,8 @@ function test() {
     var pizzaQuantity = document.getElementById("pizzaNum").value;
     document.getElementById("pizzaamounttotal").innerHTML = pizzaQuantity + " pizzas";
 
+    var pizzaName = document.getElementById("pizzatype").value;
+
     // select pizza size and multiply by quantity
     var ele = document.getElementsByName('pizzasize');
     for (i = 0; i < ele.length; i++) {
@@ -63,4 +65,6 @@ function test() {
             var drink = (drnk[i].value);
         }
     }
+
+    alert(pizzaQuantity + " " + pizzaName + " $" + pizzaPrice + "\nExtra: " + );
 } 
