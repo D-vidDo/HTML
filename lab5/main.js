@@ -24,8 +24,9 @@ function test() {
     }
 
     // select toppings
-    var toppingsTotal = parseFloat(0);
+    var toppingsTotal = parseFloat(0);                             
     var input = document.getElementsByName("toppings");
+    var stringtop;
     for (i = 0; i < input.length; i++) {
         if (input[i].checked) {
             toppingsTotal += parseFloat(input[i].value);
