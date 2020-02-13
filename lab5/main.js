@@ -4,7 +4,6 @@ function test() {
     // PIZZA CALCULATIONS
     // pizza quantity
     var pizzaQuantity = document.getElementById("pizzaNum").value;
-    document.getElementById("pizzaamounttotal").innerHTML = pizzaQuantity + " pizzas";
 
     // select pizza flavour and save it in a variable
     var pizza = document.getElementsByName("pizzatype");
@@ -18,7 +17,6 @@ function test() {
     var ele = document.getElementsByName('pizzasize');
     for (i = 0; i < ele.length; i++) {
         if (ele[i].checked) {
-            document.getElementById("firstresult").innerHTML = "Total before toppings: $" + (ele[i].value * pizzaQuantity);
             var pizzaPrice = (ele[i].value * pizzaQuantity);
         }
     }
@@ -33,8 +31,6 @@ function test() {
             document.getElementById("toppingsresult").innerHTML = "Toppings Total: $" + toppingsTotal;
         }
     }
-    // sum of everything
-    document.getElementById("finalresult").innerHTML = "Grand Total: $" + (pizzaPrice+toppingsTotal);
     /*
     PIZZA VARIABLES:
         pizzaQuantity = AMOUNT OF PIZZA
@@ -52,7 +48,7 @@ function test() {
     for (i = 0; i < sand.length; i++) {
         if (sand[i].checked) {
             document.getElementById("sandwichresult").innerHTML = "Sandwich Price: $" + (sand[i].value * sandNum);
-            var sandwich = sand[i].value;
+            var sandwich = sand[i].value * sandNum;
         }
     }
     /*
@@ -70,9 +66,9 @@ function test() {
     for (i = 0; i < drnk.length; i++) {
         if (drnk[i].checked) {
             document.getElementById("drinkresult").innerHTML = "Drinks Price: $" + (drnk[i].value * drinkNum);
-            var drink = drnk[i].value;
+            var drink = drnk[i].value * drinkNum;
         }
     }
-
-    alert(pizzaQuantity + " " + pizzaName + " $" + pizzaPrice);
+     // sum of everything
+     document.getElementById("finalresult").innerHTML = "Grand Total: $" + (pizzaPrice + toppingsTotal + drink + sandwich);
 } 
