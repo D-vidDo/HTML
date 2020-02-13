@@ -1,0 +1,13 @@
+/* lab6.css - stylesheet for index.html */
+
+header {
+    text-align: center;
+    background-color: cornsilk;
+    border: solid;
+    width: max-content;
+    margin: auto;
+}
+
+h1 {
+    padding: 5px;
+}
