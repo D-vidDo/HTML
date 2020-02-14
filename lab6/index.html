@@ -6,47 +6,51 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <title>Measurement Conversion</title>
     <link href="lab6.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
     <script type="text/javascript" src="lab6.js"></script>
 </head>
 
 <header>
-    <h1>Measurement Conversion</h1>
+    Measurement Conversion
 </header>
 
-<body>
-    <h2>Convert between Gallon and Litre</h2>
-    <table>
-        <tr>
-            <th>Imperial Value Gallon</th>
-            <th>Metric Value Litre</th>
-        </tr>
-        <tr>
-            <td><input type="number" min="0" id="gallon" onchange="convertImperialGallon(this.value);"></td>
-            <td><input type="number" min="0" id="litre" onchange="convertMetricLitre(this.value);"></td>
-        </tr>
-    </table>
-    <h2>Convert between Feet and Metre</h2>
-    <table>
-        <tr>
-            <th>Imperial Value Feet</th>
-            <th>Metric Value Metres</th>
-        </tr>
-        <tr>
-            <td><input type="number" min="0" id="feet" onchange="convertImperialFeet(this.value);"></td>
-            <td><input type="number" min="0" id="metre" onchange="convertMetricMetre(this.value);"></td>
-        </tr>
-    </table>
-    <h2>Convert between Feet and Metre</h2>
-    <table>
-        <tr>
-            <th>Imperial Value Square Feet</th>
-            <th>Metric Value Square Metres</th>
-        </tr>
-        <tr>
-            <td><input type="number" min="0" id="feet2" onchange="convertImperialFeet2(this.value);"></td>
-            <td><input type="number" min="0" id="metre2" onchange="convertMetricMetre2(this.value);"></td>
-        </tr>
-    </table>
-</body>
+<center>
+
+    <body>
+        <h1>Convert between Gallon and Litre</h1>
+        <table>
+            <tr>
+                <th>Imperial Gallon</th>
+                <th>Metric Litre</th>
+            </tr>
+            <tr>
+                <td><input type="number" min="0" id="gallon" onchange="convertImperialGallon(this.value);"></td>
+                <td><input type="number" min="0" id="litre" onchange="convertMetricLitre(this.value);"></td>
+            </tr>
+        </table>
+        <h1>Convert between Feet and Metre</h1>
+        <table>
+            <tr>
+                <th>Imperial Feet</th>
+                <th>Metric Metres</th>
+            </tr>
+            <tr>
+                <td><input type="number" min="0" id="feet" onchange="convertImperialFeet(this.value);"></td>
+                <td><input type="number" min="0" id="metre" onchange="convertMetricMetre(this.value);"></td>
+            </tr>
+        </table>
+        <h1>Convert between Feet and Metre</h1>
+        <table>
+            <tr>
+                <th>Imperial Square Feet</th>
+                <th>Metric Square Metres</th>
+            </tr>
+            <tr>
+                <td><input type="number" min="0" id="feet2" onchange="convertImperialFeet2(this.value);"></td>
+                <td><input type="number" min="0" id="metre2" onchange="convertMetricMetre2(this.value);"></td>
+            </tr>
+        </table>
+    </body>
+</center>
 
 </html>
