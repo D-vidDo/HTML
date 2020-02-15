@@ -20,7 +20,7 @@ function convertMetricLitre(val) {
 function convertImperialFeet(val) {
     //converts feet to m
     var m = parseFloat(0);
-    m = val /3.2808;
+    m = val / 3.2808;
     //display in metric number field
     document.getElementById("metre").value = m.toFixed(2);
 }
@@ -36,7 +36,7 @@ function convertMetricMetre(val) {
 function convertImperialFeet2(val) {
     //converts feet to m
     var m2 = parseFloat(0);
-    m2 = val /10.7639;
+    m2 = val / 10.7639;
     //display in metric number field
     document.getElementById("metre2").value = m2.toFixed(2);
 }

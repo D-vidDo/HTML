@@ -1,13 +1,35 @@
 /* lab6.css - stylesheet for index.html */
 
-header {
+header
+{
+    font-family: 'Odibee Sans', cursive;
+    font-size: 100px;
+    font-weight: bold;
     text-align: center;
-    background-color: cornsilk;
-    border: solid;
     width: max-content;
     margin: auto;
+    padding: 3%;
 }
 
-h1 {
-    padding: 5px;
+
+h1
+{
+    font-family: 'Odibee Sans', cursive;
+    font-size: 40px;
+}
+
+table
+{
+    font-family: 'Odibee Sans', cursive;
+    font-size: 28px;
+    color: black;
+}
+td
+{
+    padding: 30px;
+}
+
+body
+{
+    background-color: burlywood;
 }
