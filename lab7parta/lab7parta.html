@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Favorite Webpage Tracker</title>
+    <script type="text/javascript" src="lab7parta.js"></script>
+    <link href="lab7parta.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans+Condensed:300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <center>
+
+        <header>
+            <h1>Fav Webpage Tracker !</h1>
+        </header>
+
+        <form id="arraylist" onsubmit="addToArray();return false">
+
+            <table>
+                <tr>
+                    <td>
+                        <label for="url">Enter your URL:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="url" placeholder="https://example.com/" size="30" required>
+                </tr>
+            </table>
+            <button>Add to list</button>
+        </form>
+
+        <h2>List of links</h2>
+        <h4><span id="showlist"></span></h4>
+
+    </center>
+</body>
+
+</html>

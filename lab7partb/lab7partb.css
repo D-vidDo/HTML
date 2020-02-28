@@ -1,0 +1,86 @@
+.back::after
+{
+    content: ' ';
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-image:url('https://wallpaperplay.com/walls/full/1/a/a/156609.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+div
+{
+    text-align: center;
+}
+
+img
+{
+    padding-left: 100px;
+    float: left;
+}
+
+
+table
+{
+    border: 1px solid black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px black;
+    border-color: white;
+    border-spacing: 10px;
+    background-color: rgb(141, 141, 141);
+    opacity: 0.8;
+}
+
+h1
+{
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 25px;
+    font-size: 82px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+h2
+{
+	font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: white;
+    font-weight: bolder;
+    -webkit-text-stroke: 0.75px black;
+}
+h3
+{
+	font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+p
+{
+	font-family: 'Roboto', sans-serif;
+    font-size: large;
+    color: white;
+    background-color: rgb(141, 141, 141);
+    text-shadow: 1px 1px black;
+    border-color: white;
+    opacity: 0.8;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+

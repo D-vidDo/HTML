@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="lab7partb.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="lab7partb.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans+Condensed:300&display=swap"
+        rel="stylesheet">
+    <title>
+        Western Cascade Finance
+    </title>
+</head>
+
+<body class="back"><img width="200px"
+        src="https://www.nicepng.com/png/full/72-728597_money-logos-png-transparent-download-anti-facebook.png">
+
+    <h1> Western Cascade Finance </h1>
+    <div>
+        <form method="post" onsubmit="addToArray();return false">
+            <table align="center">
+                <tr>
+                    <td align="right">Name:</td>
+                    <td align="left"><input type="text" id="fullname" name="fullname" maxlength="25"
+                            pattern="^[A-Za-z -]+$" placeholder="Full Name" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Street Address:</td>
+                    <td align="left"><input type="text" id="address" name="address" placeholder="Home Address" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Phone Number:</td>
+                    <td align="left"><input type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="123-456-7890" />
+
+                        <input type="radio" name="phonetype" value="personal">Personal<input type="radio"
+                            name="phonetype" value="business">Business</td>
+                </tr>
+                <tr>
+                    <td align="right">Postal Code: </td>
+                    <td align="left"><input type="text" id="postalcode" name="postalcode"
+                            pattern="[A-Za-z][0-9][A-Za-z]-[0-9][A-Za-z][0-9]" placeholder="A1B-2C3" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Email:</td>
+                    <td align="left"><input type="email" id="email" name="email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@email.com" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Current Date:</td>
+                    <td align="left"><input type="date" name="regdate" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Are you a current client?</td>
+                    <td align="left"> <input type="radio" name="client" value="yes"> Yes
+                        <input type="radio" name="client" value="no"> No </td>
+                </tr>
+                <tr>
+                    <td align="right">Gender: </td>
+                    <td align="left"> <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="other"> Other
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Age:</td>
+                    <td align="left"><input type="number" min="18" max="100" name="age" placeholder="18+ only" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Do you own or rent a home?</td>
+                    <td align="left"> <input type="radio" name="home" value="rent"> Rent
+                        <input type="radio" name="home" value="own"> Own </td>
+                </tr>
+                <tr>
+                    <td align="right">Annual Gross Income:</td>
+                    <td align="left"><input type="number" min="0" name="income" placeholder="$10000" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Do you own any of the following?<br>(Check all that applies) </td>
+
+                    <td><input type="checkbox" name="items" />Vehicle
+
+                        <input type="checkbox" name="items" />RRSP
+
+                        <input type="checkbox" name="items" />TFSA
+
+                        <input type="checkbox" name="items" />RRIF</td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="submit" value="Submit"></td>
+                    <td align="center"><input type="reset" value="Clear"></td>
+                </tr>
+            </table>
+        </form>
+
+        <h2>List of Customers</h2>
+        <p><span id="showlist"></span></p>
+
+    </div>
+</body>
+
+</html>
