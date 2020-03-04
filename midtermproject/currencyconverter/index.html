@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter 2020</title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <center>
+    <table style="margin-top: 30%;">
+        <tr>
+            <th>Currency On Hand</th>
+            <th>Amount</th>
+            <th>Convert To</th>
+            <th>Conversion Ratio</th>
+        </tr>
+        <tr>
+            <td>
+                <select id="currencyIN" onchange="getComboA(this); convert(currencyInput.value);">
+                    <option value="">Choose A Currency</option>
+                    <option value="Euro">Euro</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="Pound">UK Pound Sterling</option>
+                    <option value="Yen">Japanese Yen</option>
+                    <option value="CAD">Canadian Dollar</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" min="0" id="currencyInput" onchange="convert(this.value);"></td>
+            </td>
+            <td>
+                <select id="currencyOUT" onchange= "getComboB(this); convert(currencyInput.value);">
+                    <option value="">Choose A Currency</option>
+                    <option value="Euro">Euro</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="Pound">UK Pound Sterling</option>
+                    <option value="Yen">Japanese Yen</option>
+                    <option value="CAD">Canadian Dollar</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" id="result" readonly>
+            </td>
+        </tr>
+    </table>
+</center>
+</body>
+
+</html>

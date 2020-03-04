@@ -1,0 +1,104 @@
+body
+{
+	background-image: linear-gradient(to right, rgb(240, 118, 219), #4AD4D4);
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.floatwrap
+{
+	float: right;
+	margin: 10px;
+}
+.floatwrap-left
+{
+	float: left;
+	margin: 10px;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+  }
+
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+
+figcaption
+{
+	font-family: 'Roboto';
+	color: white;
+}
+
+h1
+{
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 25px;
+    color:white;
+    font-size: 82px;
+}
+
+h2, th
+{
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	color: white;
+}
+h3
+{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+p
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: large;
+	color: white;
+	
+}
+
+a:hover
+{
+	background-color: #4AD4D4;
+	color: rgb(128, 104, 12);
+}
+
+img
+{
+	width: 200px;
+}
+
+.example_c {
+    color: #ffffff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff00;
+    padding: 10px;
+    border: 2px solid #ffffff !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    font-family: 'Roboto', sans-serif;
+    }
+
+.example_c:hover {
+    color: #000000 !important;
+    background: #ffffff;
+    border-color: #ffffff !important;
+    transition: all 0.4s ease 0s;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 5%;
+    width: 100%;
+    color: white;
+  }
+
