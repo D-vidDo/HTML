@@ -9,7 +9,7 @@ function addToArray() {
 function displayList() {
     var displayList = ""; 
     for (var i = 0; i < urlArray.length; i++) {
-        displayList += "<a href='http://" + urlArray[i] + "' target='blank'>" + urlArray[i] + "</a>" + "<br>";
+        displayList += "<a href='" + urlArray[i] + "' target='blank'>" + urlArray[i] + "</a>" + "<br>";
         document.getElementById("showlist").innerHTML = displayList;
     }
 }
