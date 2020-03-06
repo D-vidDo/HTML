@@ -9,78 +9,131 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-    <form method="post" onsubmit="addToArray();return false">
-        <table align="center">
-            <tr>
-                <td align="right">Name:</td>
-                <td align="left"><input type="text" id="fullname" name="fullname" maxlength="25" pattern="^[A-Za-z -]+$"
-                        placeholder="Full Name" /></td>
-            </tr>
-            <tr>
-                <td align="right">Street Address:</td>
-                <td align="left"><input type="text" id="address" name="address" placeholder="Home Address" /></td>
-            </tr>
-            <tr>
-                <td align="right">Phone Number:</td>
-                <td align="left"><input type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        placeholder="123-456-7890" />
-            </tr>
-            <tr>
-                <td align="right">Postal Code: </td>
-                <td align="left"><input type="text" id="postalcode" name="postalcode"
-                        pattern="[A-Za-z][0-9][A-Za-z]-[0-9][A-Za-z][0-9]" placeholder="A1B-2C3" /></td>
-            </tr>
-            <tr>
-                <td align="right">Email:</td>
-                <td align="left"><input type="email" id="email" name="email"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@email.com" /></td>
-            </tr>
-            <tr>
-                <td align="left">Cake Shape:</td>
-                <td align="left"><input type="button" value="Sheet Cake" id="sheet" onclick="test();"><input
-                        type="button" value="Round Cake" id="round" onclick="test1();"></td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <td>
-                    <div id="sheetdim" style="display: none;">
-                    <input type="radio" id="slayer"> 1 Layer<br>
-                    <input type="radio" id="slayer"> 2 Layers<br>
-                    <input type="radio" id="slayer"> 3 Layers
+<center>
 
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    </div>
+    <body>
+        <!-- PERSONAL INFORMATION -->
+        <form onsubmit="confirm();return false;">
+            <table align="center">
+                <tr>
+                    <td align="right">Name:</td>
+                    <td align="left"><input type="text" id="fullname" name="fullname" maxlength="25"
+                            pattern="^[A-Za-z -]+$" placeholder="Full Name" required /></td>
+                </tr>
+                <tr>
+                    <td align="right">Street Address:</td>
+                    <td align="left"><input type="text" id="address" name="address" placeholder="Home Address"
+                            required />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Phone Number:</td>
+                    <td align="left"><input type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="123-456-7890" required />
+                </tr>
+                <tr>
+                    <td align="right">Postal Code: </td>
+                    <td align="left"><input type="text" id="postalcode" name="postalcode"
+                            pattern="[A-Za-z][0-9][A-Za-z]-[0-9][A-Za-z][0-9]" placeholder="A1B-2C3" required /></td>
+                </tr>
+                <tr>
+                    <td align="right">Email:</td>
+                    <td align="left"><input type="email" id="email" name="email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@email.com" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" id="confirmInfo"></td>
+                </tr>
+            </table>
+
+            <!-- CAKE SHAPE SELECTION -->
+            <div id="cakeSpec" style="display: none;">
+                <table align="center">
+                    <tr>
+                        <th colspan="2" style="font-size: 18px;">Cake Spec Type-R Racing GT</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" id="sheetcake" value="Sheet Cake" onclick="sheetDim();"> </td>
+                        <td><input type="button" id="roundcake" value="Round Cake" onclick="roundDim();"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- SHEET CAKE SPECS -->
+            <div id="sheetdim" style="display: none;">
+                <table align="center">
+                    <tr>
+                        <th colspan="2" style="font-size: 18px;">Shit car selected !</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="slayer" name="sheetlayer" value="1"> 1 Layer<br>
+                            <input type="radio" id="slayer" name="sheetlayer" value="2"> 2 Layers<br>
+                            <input type="radio" id="slayer" name="sheetlayer" value="3"> 3 Layers<br>
+
+                            <input type="number" min="30" max="60" id="length" placeholder="Length"> cm<br>
+                            <input type="number" min="30" max="45" id="width" placeholder="Width"> cm<br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- ROUND CAKE SPECS -->
+            <div id="rounddim" style="display: none;">
+                <table align="center">
+                    <tr>
+                        <th colspan="2" style="font-size: 18px;">Round !</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" id="slayer" name="sheetlayer" value="1"> 1 Layer<br>
+                            <input type="radio" id="slayer" name="sheetlayer" value="2"> 2 Layers<br>
+                            <input type="radio" id="slayer" name="sheetlayer" value="3"> 3 Layers<br>
+
+                            <input type="number" min="30" max="60" id="radius" placeholder="Radius"> cm<br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- ADDITIONAL CHOICES -->
+            <div id="toppings" style="display: none;">
+                <table align="center">
+                    <tr>
+                        <th colspan="2" style="font-size: 18px;">fuckin CONDIments</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="cheese" name="topping" value="5">Cream Cheese Icing
+                            +$5.00<br>
+                            <input type="checkbox" id="fruitnut" name="topping" value="7">Fruit and
+                            Almonds Topping +$7.00<br>
+                            <input type="checkbox" id="jam" name="topping" value="4">Fruit Jam +$4.00<br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
 
 
 
+            <input type="button" onclick="test();" value="BYONGSHIN">
 
 
 
+        </form>
+    </body>
 
+    <p>
+        <span id="showlist"></span><br>
+        <span id="result"></span><br>
+        <span id="cheeseYES" style="display: none;">Cream Cheese Icing &emsp;&emsp;&emsp;&emsp;&emsp; $5</span><br>
+        <span id="fruitnutYES" style="display: none;">Fruit and Almond Topping &emsp;&emsp;&emsp;&emsp; $7</span><br>
+        <span id="jamYES" style="display: none;">Fruit Jam Filling &emsp;&emsp;&emsp;&emsp;&emsp; $4</span><br>
+        <span id="grandtotal"></span></p>
 
-
-                    <div id="rounddim" style="display:none;">rond</div>
-                </td>
-            </tr>
-
-
-
-
-
-        </table>
-    </form>
-</body>
+</center>
 
 </html>
