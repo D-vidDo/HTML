@@ -11,30 +11,19 @@ function addToArray() {
 }
 function displayList() {
     var customerList = "";
-    var displayRadiobuttons = "";
 
     for (var i = 0; i < objectArray.length; i++) {
         var customer = { fullname, address, postalcode, phone, email };
         customer = objectArray[i];
-        customerList = "Full Name: " + customer.fullname + "<br>" +
-            "Address: " + customer.address + "<br>" +
-            "Postal Code: " + customer.postalcode + "<br>" +
-            "Telephone Number: " + customer.phone + "<br>" +
-            "Email Contact: " + customer.email + "<br>";
-        displayRadiobuttons += "<input type = radio name = listitem ";
-        displayRadiobuttons += " value=" + i + " ";
-        displayRadiobuttons += " onchange=deleteItem(this.value)>";
-        displayRadiobuttons += customerList + "<br>";
+        customerList = customer.fullname + "<br>" +
+            customer.address + "<br>" +
+            customer.postalcode + "<br>" +
+            customer.phone + "<br>" +
+            customer.email + "<br><br>" + 
+            "Your Order: <br>";
     }
-    document.getElementById("showlist").innerHTML = displayRadiobuttons;
+    document.getElementById("showlist").innerHTML = customerList;
 }
-
-function deleteItem(i) {
-    objectArray.splice(i, 1);
-    displayList();
-}
-
-
 
 function confirm() {
   var cakeshape = document.getElementById("cakeSpec");
@@ -127,6 +116,6 @@ function test() {
   displayList();
   var grandtotal = Number(cakeCost) + Number(topping);
   document.getElementById("result").innerHTML =
-    cakeMessage + "$" + cakeCost.toFixed(2);
+    cakeMessage + "&emsp;&emsp;&emsp;&emsp;&emsp;$" + cakeCost.toFixed(2);
   document.getElementById("grandtotal").innerHTML = "Total: " + "&emsp;&emsp;&emsp;&emsp;&emsp;$" + grandtotal;
 }

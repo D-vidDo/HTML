@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:900&display=swap" rel="stylesheet">
     <title>New City Bakeries</title>
     <script type="text/javascript" src="main.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
@@ -12,8 +13,11 @@
 <center>
 
     <body>
+        <header>
+            <h1>New City Bakeries</h1>
+        </header>
         <!-- PERSONAL INFORMATION -->
-        <form onsubmit="confirm();return false;">
+        <form onsubmit="confirm();addToArray();return false;">
             <table align="center">
                 <tr>
                     <td align="right">Name:</td>
@@ -42,16 +46,17 @@
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@email.com" required />
                     </td>
                 </tr>
-                <tr>
-                    <td><input type="submit" id="confirmInfo"></td>
-                </tr>
+                <!-- <tr>
+                    
+                </tr> -->
             </table>
+            <td><input type="submit" id="confirmInfo"></td>
 
             <!-- CAKE SHAPE SELECTION -->
             <div id="cakeSpec" style="display: none;">
                 <table align="center">
                     <tr>
-                        <th colspan="2" style="font-size: 18px;">Cake Spec Type-R Racing GT</th>
+                        <th colspan="2" style="font-size: 18px;">Cake Specification</th>
                     </tr>
 
                     <tr>
@@ -65,7 +70,7 @@
             <div id="sheetdim" style="display: none;">
                 <table align="center">
                     <tr>
-                        <th colspan="2" style="font-size: 18px;">Shit car selected !</th>
+                        <th colspan="2" style="font-size: 18px;">Sheet Cake Selected !</th>
                     </tr>
                     <tr>
                         <td>
@@ -84,7 +89,7 @@
             <div id="rounddim" style="display: none;">
                 <table align="center">
                     <tr>
-                        <th colspan="2" style="font-size: 18px;">Round !</th>
+                        <th colspan="2" style="font-size: 18px;">Round Cake Selected !</th>
                     </tr>
                     <tr>
                         <td>
@@ -102,7 +107,7 @@
             <div id="toppings" style="display: none;">
                 <table align="center">
                     <tr>
-                        <th colspan="2" style="font-size: 18px;">fuckin CONDIments</th>
+                        <th colspan="2" style="font-size: 18px;">Additional Choices</th>
                     </tr>
                     <tr>
                         <td>
@@ -114,26 +119,30 @@
                         </td>
                     </tr>
                 </table>
+                <input type="button" onclick="test();" value="CONFIRM">
             </div>
 
 
 
 
-            <input type="button" onclick="test();" value="BYONGSHIN">
+
 
 
 
         </form>
     </body>
 
-    <p>
-        <span id="showlist"></span><br>
-        <span id="result"></span><br>
-        <span id="cheeseYES" style="display: none;">Cream Cheese Icing &emsp;&emsp;&emsp;&emsp;&emsp; $5</span><br>
-        <span id="fruitnutYES" style="display: none;">Fruit and Almond Topping &emsp;&emsp;&emsp;&emsp; $7</span><br>
-        <span id="jamYES" style="display: none;">Fruit Jam Filling &emsp;&emsp;&emsp;&emsp;&emsp; $4</span><br>
-        <span id="grandtotal"></span></p>
-
+    <div style="text-align: right;">
+        <p>
+            <span id="showlist"></span><br>
+            <span id="result"></span><br>
+            <span id="cheeseYES" style="display: none;">Cream Cheese Icing &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $5</span><br>
+            <span id="fruitnutYES" style="display: none;">Fruit and Almond Topping &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                $7</span><br>
+            <span id="jamYES" style="display: none;">Fruit Jam Filling &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; $4</span><br>
+            <span id="grandtotal"></span>
+        </p>
+    </div>
 </center>
 
 </html>
