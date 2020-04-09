@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Delicatessen</title>
+</head>
+
+
+<center>
+
+    <body class="back">
+        <h1> City Delicatessen </h1>
+        <!-- Personal Info -->
+        <form method="post" onsubmit="placeOrder();return false">
+        <table>
+            <tr>
+                <td align="right">Name:</td>
+                <td align="left"><input type="text" id="fullname" name="fullname" maxlength="25" pattern="^[A-Za-z -]+$"
+                        placeholder="Full Name" required/></td>
+            </tr>
+            <tr>
+                <td align="right">Street Address:</td>
+                <td align="left"><input type="text" id="address" name="address" placeholder="Home Address" required/></td>
+            </tr>
+            <tr>
+                <td align="right">Phone Number:</td>
+                <td align="left"><input type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="123-456-7890" required/></td>
+            </tr>
+        </table>
+        <div>
+            <!-- Pizza -->
+            <h2> Pizza </h2>
+            <h3> Flavour Choices: </h3>
+            <h4>Small - 8.50 Medium - 11.50 Large - 14.00 Extra Large - 16.50</h4>
+            <h5>Extra Toppings are $1.75 each</h5>
+            <input type="number" min="0" id="cheeseNum" placeholder="0">
+            Super Cheesy<br>
+            <input type="radio" name="cheeseSize" value="8.50"> S
+            <input type="radio" name="cheeseSize" value="11.50"> M
+            <input type="radio" name="cheeseSize" value="14.00"> L
+            <input type="radio" name="cheeseSize" value="16.50"> XL<br>
+            <input type="checkbox" name="cheeseToppings" value="Extra Cheese"> Extra Cheese
+            <input type="checkbox" name="cheeseToppings" value="Pepperoni"> Pepperoni
+            <input type="checkbox" name="cheeseToppings" value="Mushrooms"> Mushrooms
+            <input type="checkbox" name="cheeseToppings" value="Bacon"> Bacon
+            <input type="checkbox" name="cheeseToppings" value="Olives"> Olives<br>
+            <hr>
+            <input type="number" min="0" id="meatNum" placeholder="0">
+            Extra Meaty<br>
+            <input type="radio" name="meatSize" value="8.50"> S
+            <input type="radio" name="meatSize" value="11.50"> M
+            <input type="radio" name="meatSize" value="14.00"> L
+            <input type="radio" name="meatSize" value="16.50"> XL<br>
+            <input type="checkbox" name="meatToppings" value="Extra Cheese"> Extra Cheese
+            <input type="checkbox" name="meatToppings" value="Pepperoni"> Pepperoni
+            <input type="checkbox" name="meatToppings" value="Mushrooms"> Mushrooms
+            <input type="checkbox" name="meatToppings" value="Bacon"> Bacon
+            <input type="checkbox" name="meatToppings" value="Olives"> Olives<br>
+            <hr>
+            <input type="number" min="0" id="vegNum" placeholder="0">
+            Really Veggy<br>
+            <input type="radio" name="vegSize" value="8.50"> S
+            <input type="radio" name="vegSize" value="11.50"> M
+            <input type="radio" name="vegSize" value="14.00"> L
+            <input type="radio" name="vegSize" value="16.50"> XL<br>
+            <input type="checkbox" name="vegToppings" value="Extra Cheese"> Extra Cheese
+            <input type="checkbox" name="vegToppings" value="Pepperoni"> Pepperoni
+            <input type="checkbox" name="vegToppings" value="Mushrooms"> Mushrooms
+            <input type="checkbox" name="vegToppings" value="Bacon"> Bacon
+            <input type="checkbox" name="vegToppings" value="Olives"> Olives<br>
+
+            <!-- Sandwiches -->
+            <h2> Sandwiches </h2>
+            <h3> Flavour Choices: </h3>
+            <input type="number" min="0" id="Garden" placeholder="0">
+            All Garden Vegetarian $7.50<br>
+            <input type="number" min="0" id="Beef" placeholder="0">
+            Big Beef on a Bun $8.50<br>
+            <input type="number" min="0" id="Grill" placeholder="0">
+            Mixed Grill $9.50<br>
+            <input type="number" min="0" id="Pork" placeholder="0">
+            Grilled Pork $9.50<br>
+            
+            <!-- DRINKS -->
+            <h2> Drinks </h2>
+            <h3> Flavour Choices: </h3>
+            <h4>Small - 1.25 Medium - 1.75 Large - 2.00</h4>
+            <input type="number" min="0" id="colaNum" placeholder="0">
+            Cola<br>
+            <input type="radio" name="colaSize" value="1.25"> S
+            <input type="radio" name="colaSize" value="1.75"> M
+            <input type="radio" name="colaSize" value="2.00"> L<br>
+            <hr>
+            <input type="number" min="0" id="orangeNum" placeholder="0">
+            Orange<br>
+            <input type="radio" name="orangeSize" value="1.25"> S
+            <input type="radio" name="orangeSize" value="1.75"> M
+            <input type="radio" name="orangeSize" value="2.00"> L<br>
+            <hr>
+            <input type="number" min="0" id="lemonNum" placeholder="0">
+            Lemon<br>
+            <input type="radio" name="lemonSize" value="1.25"> S
+            <input type="radio" name="lemonSize" value="1.75"> M
+            <input type="radio" name="lemonSize" value="2.00"> L<br>
+            <hr>
+            <input type="number" min="0" id="rootbeerNum" placeholder="0">
+            Root Beer<br>
+            <input type="radio" name="rootbeerSize" value="1.25"> S
+            <input type="radio" name="rootbeerSize" value="1.75"> M
+            <input type="radio" name="rootbeerSize" value="2.00"> L<br>
+
+        </div>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+        <!-- PRINT RESULTS -->
+        <p id="result"></p>
+        <p id="price"></p>
+        <p><span id="order"></span></p>
+    </body>
+</center>
+<script src="main.js"></script>
+
+</html>

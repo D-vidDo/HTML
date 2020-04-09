@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="author" content="Justin Serrano">
+    <title>Client Database</title>
+    <link href="lab11.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="lab11.js"></script>
+
+</head>
+<header class="title">
+    <h1>Client Database</h1>
+</header>
+<br><br>
+
+<body>
+    <div class="box">
+        <h3>After Each Input, press Enter</h3>
+        <table class="center">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="id">Client ID: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="id" id="id" size="30" placeholder="1-64">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastName">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lastName" id="lastName" size="30" placeholder="Enter last name here">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Telephone Number:</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="phone" id="phone" size="30" placeholder="000-000-0000">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+
+    <div class="box">
+        <h3>Search By: </h3>
+        <h3 id="searchvalue"></h3>
+        <table class="center" id="searchresults"></table>
+    </div>
+</body>
+
+</html>
