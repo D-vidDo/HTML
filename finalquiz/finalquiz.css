@@ -1,0 +1,28 @@
+body
+{
+    font-family: 'Inria Sans', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    text-align: left;
+}
+
+span
+{
+    color: rgb(201, 201, 201);
+    /* color: rgb(39, 146, 173); */
+    padding-right: 50px;
+    padding: 5px;
+    padding: auto;
+}
+
+.test
+{
+    background-color: white;
+}
+
+#Submit, #reset
+{
+    width: 200px;
+    font-size: xx-large;
+    background-color: blanchedalmond;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Dodgy Brakes Car Rental</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans+Condensed:300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<header>
+    <img src="https://img.pngio.com/cartoon-car-png-blue-color-transparent-background-image-high-cartoon-car-png-900_900.png">
+    <h1 class="title">Dodgy Brakes<br>Car Rental</h1>
+    
+</header>
+
+<body>
+    <center>
+    <fieldset>
+        <legend>
+            <h1 class="title">Search Options</h1>
+        </legend>
+        <div class="box">
+            <table class="center">
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="lastN">Last Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="lastN" id="lastN" size="30" placeholder="Ex. Smith">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h1 class="title">Search</h1>
+        </legend>
+
+        <div class="box">
+            <h2 id="formVal">Searching By:</h2>
+            <h2 id="valForm"></h2>
+            <table class="center" id="resultVal"></table>
+        </div>
+    </fieldset>
+
+    <fieldset id="form" disabled = "true">
+        <legend>
+            <h1 class="title">Please fill out this form</h1>
+        </legend>
+        <table style="margin: auto;">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="lastNF">Last Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="lastNF" id="lastNF" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="firstNF">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="firstNF" id="firstNF" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="addyF">Address:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="addyF" id="addyF" size="30">
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <label for="statePF">State/Prov:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="statePF" id="statePF" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="emailF">Email:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="emailF" id="emailF" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phoneF">Phone Number:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="phoneF" id="phoneF" size="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="formType">Type of Car:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="type" value="15" id="compact"> Compact $15/day</input>
+                        <input type="radio" name="type" value="20" id="mid"> Mid-Size $20/day</input>
+                        <input type="radio" name="type" value="35" id="lux"> Luxury $35/day</input>
+                        <input type="radio" name="type" value="45" id="van"> Van/Truck $45/day</input>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <label for="extra">Extra Options:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="rRack" id="roofrack" value="5"> Roof Rack or Bicycle Rack
+                        extra
+                        $5/day</input>
+                        <input type="checkbox" name="gps" id="gps" value="10"> GPS extra $10</input>
+                        <input type="checkbox" name="cSeat" id="child" value="0"> Child Seat (Free)</input>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <label for="quant">Number of Days:</label>
+                    </td>
+                    <td>
+                        <select id="daysRent" name="rental" size="1">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p></p>
+                    </td>
+                    <td>
+                        <button onclick="calc()">Finish</button>
+                        <button onclick="cancel">Cancel</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+</body>
+
+</html>

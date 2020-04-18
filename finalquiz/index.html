@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="finalquiz.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="finalquiz.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Index</title>
+</head>
+<body onsubmit="checkQuiz(); return false">
+    <form>
+        <table>
+            <tr>
+                <th>
+                    <td><h3><span id="question"></span></h3></td>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <td><h1><span id="gradedQuiz"></span></h1></td>
+                </th>
+            </tr>
+        </table>
+        <input type="submit" id="Submit" value="Grade Quiz">
+        <input type="reset" id="reset" value="Restart Quiz" onclick="window.location.reload();">
+    </form>
+</body>
+</html>
